@@ -42,15 +42,13 @@ def plot_with_fill(ax, phase, pwm, color, label):
     ax.axhline(y=0, color='k', linestyle='-', linewidth=0.75)
     ax.legend()
 
-# Signal sinusoïdal et PWM de la phase 1
+# Signaux sinusoïdaux et PWM
 ax1 = plt.subplot(3, 1, 1)
 plot_with_fill(ax1, sin_wave, pwm_signal, Vert, 'Phase 1 Sinusoïdal (50 Hz)')
 
-# Signal sinusoïdal et PWM de la phase 2
 ax2 = plt.subplot(3, 1, 2)
 plot_with_fill(ax2, sin_wave_120, pwm_signal_120, Vert, 'Phase 2 Sinusoïdal (50 Hz)')
 
-# Signal sinusoïdal et PWM de la phase 3
 ax3 = plt.subplot(3, 1, 3)
 plot_with_fill(ax3, sin_wave_240, pwm_signal_240, Vert, 'Phase 3 Sinusoïdal (50 Hz)')
 
